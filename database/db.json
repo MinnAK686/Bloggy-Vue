@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "post title",
+      "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, molestiae. Nostrum ex iusto animi laboriosam voluptatum id quas at dolor, illo facere officia maxime magni amet omnis vitae architecto deserunt nam reiciendis porro, facilis nisi. Nisi recusandae nam aperiam dignissimos saepe natus harum illum aliquam incidunt, nostrum, quasi tempora eveniet, necessitatibus molestias adipisci architecto vero quos omnis reprehenderit! Est, assumenda deserunt. Accusantium omnis doloribus sequi iusto ullam quisquam inventore, dolorum iste error vitae repellat eius tenetur doloremque ex dicta, possimus, ipsa incidunt ducimus assumenda cum non odit corrupti. Quod deserunt non temporibus omnis inventore sit recusandae ratione. Quod, iure blanditiis!",
+      "tags": [
+        "web dev","it","software dev"
+      ],
+      "author": "admin",
+      "category": "Information Technology"
+    },
+    {
+      "id": 2,
+      "title": "post title",
+      "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, molestiae. Nostrum ex iusto animi laboriosam voluptatum id quas at dolor, illo facere officia maxime magni amet omnis vitae architecto deserunt nam reiciendis porro, facilis nisi. Nisi recusandae nam aperiam dignissimos saepe natus harum illum aliquam incidunt, nostrum, quasi tempora eveniet, necessitatibus molestias adipisci architecto vero quos omnis reprehenderit! Est, assumenda deserunt. Accusantium omnis doloribus sequi iusto ullam quisquam inventore, dolorum iste error vitae repellat eius tenetur doloremque ex dicta, possimus, ipsa incidunt ducimus assumenda cum non odit corrupti. Quod deserunt non temporibus omnis inventore sit recusandae ratione. Quod, iure blanditiis!",
+      "tags": [
+        "web dev","js"
+      ],
+      "author": "admin",
+      "category": "Information Technology"
+    },
+    {
+      "id": 3,
+      "title": "post title",
+      "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, molestiae. Nostrum ex iusto animi laboriosam voluptatum id quas at dolor, illo facere officia maxime magni amet omnis vitae architecto deserunt nam reiciendis porro, facilis nisi. Nisi recusandae nam aperiam dignissimos saepe natus harum illum aliquam incidunt, nostrum, quasi tempora eveniet, necessitatibus molestias adipisci architecto vero quos omnis reprehenderit! Est, assumenda deserunt. Accusantium omnis doloribus sequi iusto ullam quisquam inventore, dolorum iste error vitae repellat eius tenetur doloremque ex dicta, possimus, ipsa incidunt ducimus assumenda cum non odit corrupti. Quod deserunt non temporibus omnis inventore sit recusandae ratione. Quod, iure blanditiis!",
+      "tags": [
+        "web dev","js","vue js"
+      ],
+      "author": "admin",
+      "category": "Information Technology"
+    },
+    {
+      "id": 4,
+      "title": "post title",
+      "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, molestiae. Nostrum ex iusto animi laboriosam voluptatum id quas at dolor, illo facere officia maxime magni amet omnis vitae architecto deserunt nam reiciendis porro, facilis nisi. Nisi recusandae nam aperiam dignissimos saepe natus harum illum aliquam incidunt, nostrum, quasi tempora eveniet, necessitatibus molestias adipisci architecto vero quos omnis reprehenderit! Est, assumenda deserunt. Accusantium omnis doloribus sequi iusto ullam quisquam inventore, dolorum iste error vitae repellat eius tenetur doloremque ex dicta, possimus, ipsa incidunt ducimus assumenda cum non odit corrupti. Quod deserunt non temporibus omnis inventore sit recusandae ratione. Quod, iure blanditiis!",
+      "tags": [
+        "web dev","php","laravel"
+      ],
+      "author": "admin",
+      "category": "Information Technology"
+    },
+    {
+      "id": 5,
+      "title": "post title",
+      "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, molestiae. Nostrum ex iusto animi laboriosam voluptatum id quas at dolor, illo facere officia maxime magni amet omnis vitae architecto deserunt nam reiciendis porro, facilis nisi. Nisi recusandae nam aperiam dignissimos saepe natus harum illum aliquam incidunt, nostrum, quasi tempora eveniet, necessitatibus molestias adipisci architecto vero quos omnis reprehenderit! Est, assumenda deserunt. Accusantium omnis doloribus sequi iusto ullam quisquam inventore, dolorum iste error vitae repellat eius tenetur doloremque ex dicta, possimus, ipsa incidunt ducimus assumenda cum non odit corrupti. Quod deserunt non temporibus omnis inventore sit recusandae ratione. Quod, iure blanditiis!",
+      "tags": [
+        "web dev","vue js","laravel"
+      ],
+      "author": "admin",
+      "category": "Information Technology"
+    }
+  ]
+}

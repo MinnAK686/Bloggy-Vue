@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "scss": "sass --watch src/assets/scss/main.scss:src/assets/css/bootstrap.css",
+    "db": "json-server --watch database/db.json"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"

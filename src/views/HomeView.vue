@@ -1,18 +1,34 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="row justify-content-start ">
+      <!-- Posts -->
+      <Posts :posts="posts"></Posts>
+      <!-- Sidebar -->
+      <Sidebar :posts="posts"></Sidebar>
+    </div>
   </div>
 </template>
 
 <script>
+import Sidebar from '../components/Sidebar'
+import Posts from '../components/Posts'
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import getAllPost from '@/composables/getAllPost';
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    Sidebar,
+    Posts,
+  },
+  setup() {
+    let {posts,error,load} = getAllPost();
+    load();
+
+
+    return {
+      posts,error
+    }
   }
 }
 </script>
