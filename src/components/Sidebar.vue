@@ -74,7 +74,7 @@ export default {
     }) 
 
     let uniqueTags = tags.value.filter((tag,index,array) => {
-      return array.indexOf(tag) === index;
+      return array.indexOf(tag) === index;  
     })
 
     return {
