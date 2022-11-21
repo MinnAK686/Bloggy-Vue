@@ -18,10 +18,16 @@
               Menu
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <router-link :to="{name: 'create-post'}" class="dropdown-item">Create Post</router-link>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item">

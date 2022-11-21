@@ -1,9 +1,5 @@
-// Import the functions you need from the SDKs you need
-
-import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite'
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import firebase from "firebase/app";
+import 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -15,9 +11,12 @@ const firebaseConfig = {
   appId: "1:974781142848:web:a2a30974a1def68a1dcca5"
 };
 
-// Initialize Firebase
-const firebase = initializeApp(firebaseConfig);
+// Initialize Firebase Config
+firebase.initializeApp(firebaseConfig);
 
-let db = getFirestore(firebase)
+// Initialize Firestore Database
+let db = firebase.firestore();
 
-export { db };
+let timestamp = firebase.firestore.FieldValue.serverTimestamp
+
+export { db,timestamp };

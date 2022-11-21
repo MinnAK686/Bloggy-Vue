@@ -1,8 +1,11 @@
 <template>
-  <div class="col-sm-12 col-md-12 col-lg-8">
+  <div class="col-sm-12 col-md-12 col-lg-8" v-if="posts.length > 0">
     <div v-for="post in posts" :key="post.id">
         <SinglePost :post="post"></SinglePost>
     </div>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-8" v-else>
+    <Loading></Loading>
   </div>
 </template>
 

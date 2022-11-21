@@ -2,12 +2,7 @@
   <div class="container">
     <div class="row justify-content-start ">
       <!-- Posts -->
-      <div v-if="posts.length > 0">
-        <Posts :posts="filteredPosts"></Posts>
-      </div>
-      <div v-else>
-        <Loading></Loading>
-      </div>
+      <Posts :posts="filteredPosts"></Posts>
       <!-- Sidebar -->
       <Sidebar :posts="posts"></Sidebar>
     </div>
@@ -15,7 +10,6 @@
 </template>
 
 <script>
-import Loading from '../components/Loading'
 import Sidebar from '../components/Sidebar'
 import Posts from '../components/Posts'
 import getAllPost from '@/composables/getAllPost';
@@ -23,8 +17,8 @@ import { ref } from '@vue/reactivity';
 import { computed } from '@vue/runtime-core';
 export default {
   components: {
-    Loading,
-    Sidebar, Posts },
+    Sidebar, Posts 
+  },
   props: ['tag'],
   setup(props) {
     let {posts,error,load} = getAllPost();

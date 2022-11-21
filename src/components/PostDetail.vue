@@ -1,11 +1,11 @@
 <template>
-  <div class="col-sm-12 col-md-12 col-lg-8">
+  <div class="col-sm-12 col-md-12 col-lg-8" v-if="post">
     <div class="card post">
       <div class="img-fluid">
         <img src="../assets/images/blog-post-03.jpg" class="card-img-top" alt="..."/>
       </div>
       <div class="card-body">
-        <div class="post-header">
+        <div class="post-header"> 
           <h4 class="post-category">{{post.category}}</h4>
           <h5 class="post-title">
             {{post.title}} 
@@ -51,14 +51,41 @@
         </div>
       </div>
     </div>
+    <div class="d-grid gap-2 mt-3 mb-5">
+      <button class="btn btn-primary" @click="deletePost">Delete</button>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-8" v-else>
+    <Loading></Loading>
   </div>
 </template>
 
 <script>
-import SinglePost from './SinglePost'
+import Loading from './Loading'
+import SinglePost from './SinglePost' 
+import { db } from '@/firebase/config'
+import { useRouter } from 'vue-router'
 export default {
-  components: { SinglePost },
+  components: {
+    Loading, SinglePost
+  },
   props: ['post'],
+
+  setup(props) {
+    let router = useRouter();
+
+    let deletePost = async () => {
+      let id = props.post.id;
+      // console.log(id)
+      await db.collection("posts").doc(id).delete();      
+      router.push("/");
+    }
+
+    return {
+      deletePost
+    }
+  }
+
 }
 </script>
 

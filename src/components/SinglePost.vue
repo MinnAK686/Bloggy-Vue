@@ -14,7 +14,8 @@
             <router-link to="#">{{post.author}}</router-link>
           </span>
           <span>
-            <router-link to="#">19 / 11 / 2022</router-link>
+            <router-link to="#">21 / 11 / 2022</router-link>
+            <router-link to="#">{{post.created_at}}</router-link>
           </span>
           <span>
             <router-link to="#">10 Comments</router-link>

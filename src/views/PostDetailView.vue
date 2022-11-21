@@ -4,12 +4,12 @@
       <!-- Posts -->
       <PostDetail :post="post"></PostDetail> 
       <!-- Sidebar -->
-      <Sidebar :posts="posts"></Sidebar>
+      <Sidebar :posts="posts"></Sidebar> 
     </div>
   </div>
 </template>
 
-<script>
+<script> 
 import Sidebar from '../components/Sidebar'
 import PostDetail from '../components/PostDetail'
 import getSinglePost from '@/composables/getSinglePost';
@@ -17,11 +17,12 @@ import getAllPost from '@/composables/getAllPost';
 import { useRoute } from 'vue-router';
 export default {
   components: {
-    Sidebar, PostDetail },
-  // props: ['id'],
-  setup() {
+    Sidebar, PostDetail 
+  },
+  props: ['id'],
+  setup(props) {
     let route = useRoute();
-    let {post,error,load} = getSinglePost(route.params.id);
+    let {post,error,load} = getSinglePost(props.id);
     let {posts} = getAllPost()
     load();
 
